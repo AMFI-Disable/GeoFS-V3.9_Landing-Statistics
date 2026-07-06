@@ -12,7 +12,7 @@ The professional landing performance and analytics framework for **GeoFS-V3.9**.
 - **📈 Comprehensive Scoring**: A dynamic 0-10 score based on FPM, G-force, bank angle, bounces, and runway alignment.
 - **🗺️ OSM Runway Detection**: Automatically identifies nearby runways using the Overpass API to verify touchdown zone (TDZ) accuracy.
 - **🎭 Intelligent Feedback**: Randomized passenger and flight-quality reports providing immersive post-landing reviews.
-- **🚀 CDN Loader Architecture**: Instant updates via a lightweight loader pattern, ensuring you always have the latest analytics features.
+- **🚀 CDN Loader Architecture**: Automatically injects statistics display alongside the HUD.
 
 ## 🛠️ Installation
 
@@ -20,6 +20,6 @@ The professional landing performance and analytics framework for **GeoFS-V3.9**.
 
 1. Install the [Tampermonkey](https://www.tampermonkey.net/) extension.
 2. Install the script via [**Greasy Fork**](https://greasyfork.org/en/scripts/581684-geofs-v3-9-landing-statistics).
-3. Refresh GeoFS and the statistics panel will automatically trigger upon your first touchdown.
+3. Refresh GeoFS and the module will automatically initialize alongside the HUD.
 
 *© 2026 _init. Part of the [GeoFS-V3.9_Ecosystem](https://sites.google.com/view/geofs-v39-ecosystem/home).*
