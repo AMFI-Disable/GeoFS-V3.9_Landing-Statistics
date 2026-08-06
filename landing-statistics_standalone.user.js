@@ -117,7 +117,7 @@
 // @copyright           2026, _init (https://greasyfork.org/users/1594049)
 
 // @namespace           https://greasyfork.org/users/1594049
-// @version             2.0.0
+// @version             2.0.1
 // @author              _init
 // @icon                https://geofs-assets.evengao6688.workers.dev/icons/landing-statistics.png
 // @match               https://www.geo-fs.com/geofs.php*
@@ -126,17 +126,15 @@
 // @license             MIT
 // ==/UserScript==
 
-(function() {
-    'use strict';
+(() => {
+    
 
     window.MS_TO_KNOTS = window.MS_TO_KNOTS || 1.94384449;
     window.DEGREES_TO_RAD = window.DEGREES_TO_RAD || 0.017453292519943295769236907684886127134428718885417254560971914401710091146034494436822415696345094822123044925073790592483854692275281012398474218934047117319168245015010769561697553581238605305168789;
     window.RAD_TO_DEGREES = window.RAD_TO_DEGREES || 57.295779513082320876798154814105170332405472466564321549160243861202847148321552632440968995851110944186223381632864893281448264601248315036068267863411942122526388097467267926307988702893110767938261;
     
     // Utility function required for scoring math
-    window.clamp = window.clamp || function(val, min, max) {
-        return Math.max(min, Math.min(max, val));
-    };
+    window.clamp = window.clamp || ((val, min, max) => Math.max(min, Math.min(max, val)));
 
     window.closeTimer = true;
     window.closeSeconds = 15;
@@ -194,7 +192,7 @@
     track();
 
     // Technical Module Initialization Entrypoint (called by SafeInit)
-    window.initLandingStats = function() {
+    window.initLandingStats = () => {
         if (window.isStatsLoaded) return;
         window.isStatsLoaded = true;
 
@@ -259,7 +257,7 @@
                     -webkit-backdrop-filter: blur(14px);
                     backdrop-filter: blur(14px);
                     box-shadow: 0 12px 50px rgba(0,0,0,0.6), inset 0 0 15px rgba(255,255,255,0.02);
-                    font-family: 'Roboto', system-ui, sans-serif;
+                    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
                     display: none;
                     flex-direction: column;
                     transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.15), opacity 0.3s ease;
@@ -504,13 +502,13 @@
      * @param {number} tilt - Pitch angle in degrees.
      * @param {boolean} isBounce - True if this represents a bounce touchdown.
      */
-    window.renderLandingStats = function(vSpeed, gForce, calVS, ias, tas, gs, roll, tilt, isBounce) {
+    window.renderLandingStats = (vSpeed, gForce, calVS, ias, tas, gs, roll, tilt, isBounce) => {
         // Penalty Logic
-        let p_vs = window.clamp((vSpeed - 50) / 70, 0, 5);
-        let p_g = window.clamp(Math.abs(gForce - 1.0) * 2, 0, 2.0);
-        let p_b = Math.min(window.bounces * 2.0, 6.0);
-        let p_r = window.clamp(Math.abs(roll) / 10, 0, 1.5);
-        let p_tdz = window.isInTDZ ? 0 : 1.0;
+        const p_vs = window.clamp((vSpeed - 50) / 70, 0, 5);
+        const p_g = window.clamp(Math.abs(gForce - 1.0) * 2, 0, 2.0);
+        const p_b = Math.min(window.bounces * 2.0, 6.0);
+        const p_r = window.clamp(Math.abs(roll) / 10, 0, 1.5);
+        const p_tdz = window.isInTDZ ? 0 : 1.0;
         window.landingScore = window.clamp((10 - p_vs - p_g - p_b - p_r - p_tdz), 0, 10);
 
         const quality = getLandingQuality(vSpeed);
@@ -628,7 +626,7 @@
      * Primary Refresh Loop: Impact Detection and Scoring
      * Monitores ground contact and calculates landing quality metrics.
      */
-    window.updateLndgStats = function() {
+    window.updateLndgStats = () => {
         if (!window.geofs || !window.geofs.animation || !window.geofs.animation.values || !window.geofs.aircraft || !window.geofs.aircraft.instance) {
             return;
         }
@@ -658,25 +656,25 @@
                         window.statsOpen = true;
                         window.isInTDZ = window.getTDZStatus();
                         
-                        let vs = window.lVS || Math.abs(window.geofs.animation.values.verticalSpeed || 0);
-                        let gForce = (window.geofs.animation.values.accZ !== undefined) ? (window.geofs.animation.values.accZ / 9.80665) : 1.0;
-                        let calVS = window.calVertS;
-                        let ias = window.ktias;
-                        let tas = window.kTrue;
-                        let gs = window.groundSpeed;
-                        let roll = window.lRoll || Math.abs(window.geofs.animation.values.aroll || 0);
-                        let tilt = Math.abs(window.geofs.animation.values.atilt || 0);
+                        const vs = window.lVS || Math.abs(window.geofs.animation.values.verticalSpeed || 0);
+                        const gForce = (window.geofs.animation.values.accZ !== undefined) ? (window.geofs.animation.values.accZ / 9.80665) : 1.0;
+                        const calVS = window.calVertS;
+                        const ias = window.ktias;
+                        const tas = window.kTrue;
+                        const gs = window.groundSpeed;
+                        const roll = window.lRoll || Math.abs(window.geofs.animation.values.aroll || 0);
+                        const tilt = Math.abs(window.geofs.animation.values.atilt || 0);
                         
                         window.renderLandingStats(vs, gForce, calVS, ias, tas, gs, roll, tilt, false);
                     } else {
                         // Bounce Detection: Multi-touch event tracking
                         window.bounces++;
                         
-                        let vs = window.lVS || Math.abs(window.geofs.animation.values.verticalSpeed || 0);
-                        let gForce = (window.geofs.animation.values.accZ !== undefined) ? (window.geofs.animation.values.accZ / 9.80665) : 1.0;
-                        let calVS = window.calVertS;
-                        let roll = window.lRoll || Math.abs(window.geofs.animation.values.aroll || 0);
-                        let tilt = Math.abs(window.geofs.animation.values.atilt || 0);
+                        const vs = window.lVS || Math.abs(window.geofs.animation.values.verticalSpeed || 0);
+                        const gForce = (window.geofs.animation.values.accZ !== undefined) ? (window.geofs.animation.values.accZ / 9.80665) : 1.0;
+                        const calVS = window.calVertS;
+                        const roll = window.lRoll || Math.abs(window.geofs.animation.values.aroll || 0);
+                        const tilt = Math.abs(window.geofs.animation.values.atilt || 0);
                         
                         window.renderLandingStats(vs, gForce, calVS, window.ktias, window.kTrue, window.groundSpeed, roll, tilt, true);
                     }
@@ -708,7 +706,7 @@
      * Calculates vertical speed relative to the ground surface rather than MSL.
      * Essential for mountainous landings or uneven terrain.
      */
-    window.updateCalVertS = function() {
+    window.updateCalVertS = () => {
         if (window.geofs && window.geofs.animation && window.geofs.animation.values && window.geofs.aircraft && window.geofs.aircraft.instance && !window.geofs.isPaused()) {
             let collisionOffset = 0;
             const inst = window.geofs.aircraft.instance;
@@ -719,7 +717,7 @@
                 }
             }
             
-            let currentAGL = (window.geofs.animation.values.altitude !== undefined && window.geofs.animation.values.groundElevationFeet !== undefined) 
+            const currentAGL = (window.geofs.animation.values.altitude !== undefined && window.geofs.animation.values.groundElevationFeet !== undefined) 
                 ? ((window.geofs.animation.values.altitude - window.geofs.animation.values.groundElevationFeet) + collisionOffset) 
                 : 'N/A';
                 
@@ -738,7 +736,7 @@
      * Calculates proximity to the nearest runway's aiming points (TDZ).
      * @returns {boolean} True if within 600m of a validated touchdown point.
      */
-    window.getTDZStatus = function() {
+    window.getTDZStatus = () => {
         if (!window.geofs || !window.geofs.aircraft || !window.geofs.aircraft.instance || !window.geofs.runways || typeof window.geofs.runways.getNearestRunway !== 'function') return false;
         try {
             var nearestRw = window.geofs.runways.getNearestRunway(window.geofs.aircraft.instance.llaLocation);
@@ -756,7 +754,7 @@
     /**
      * Resets scoring state and hides the landing statistics card from the screen.
      */
-    window.closeLndgStats = function() {
+    window.closeLndgStats = () => {
         if (window.closeTimeoutId) {
             clearTimeout(window.closeTimeoutId);
             window.closeTimeoutId = null;
@@ -772,7 +770,7 @@
     /**
      * Recursive loop execution to monitor landing telemetry at high frequency.
      */
-    window.statsLoop = function() {
+    window.statsLoop = () => {
         try {
             window.updateLndgStats();
         } catch (e) {
