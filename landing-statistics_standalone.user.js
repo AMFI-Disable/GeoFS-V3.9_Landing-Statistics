@@ -51,57 +51,57 @@
 // @name:lo             GeoFS-V3.9_ສະຖິຕິການລົງຈອດ
 // @name:ur             GeoFS-V3.9_لینڈنگ-کے-اعدادوشمار
 
-// @description         Precision flight analytics for GeoFS with G-force monitoring, vertical speed analysis, and passenger feedback. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:vi      Phân tích chuyến bay chính xác cho GeoFS với tính năng giám sát lực G, phân tích tốc độ thẳng đứng và phản hồi của hành khách. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:zh-CN   通过重力监测、垂直速度分析和乘客反馈对 GeoFS 进行精确飞行分析。 © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:zh-TW   透過重力監測、垂直速度分析和乘客回饋對 GeoFS 進行精確飛行分析。 © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:ja      G フォース モニタリング、垂直速度分析、乗客のフィードバックを備えた GeoFS の精密な飛行分析。 © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:ko      G-force 모니터링, 수직 속도 분석 및 승객 피드백을 갖춘 GeoFS용 정밀 비행 분석입니다. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:fr      Analyses de vol de précision pour GeoFS avec surveillance de la force G, analyse de la vitesse verticale et commentaires des passagers. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:de      Präzise Fluganalysen für GeoFS mit G-Force-Überwachung, vertikaler Geschwindigkeitsanalyse und Passagier-Feedback. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:es      Análisis de vuelo de precisión para GeoFS con monitoreo de fuerza G, análisis de velocidad vertical y comentarios de los pasajeros. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:pt-BR   Análise precisa de voo para GeoFS com monitoramento de força G, análise de velocidade vertical e feedback dos passageiros. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:pt-PT   Análise precisa de voo para GeoFS com monitorização de força G, análise de velocidade vertical e feedback dos passageiros. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:ru      Точная аналитика полета для GeoFS с мониторингом перегрузки, анализом вертикальной скорости и отзывами пассажиров. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:ar      تحليلات دقيقة للطيران لنظام GeoFS مع مراقبة قوة الجاذبية وتحليل السرعة العمودية وتعليقات الركاب. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:tr      G kuvveti izleme, dikey hız analizi ve yolcu geri bildirimi ile GeoFS için hassas uçuş analitiği. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:id      Analisis penerbangan presisi untuk GeoFS dengan pemantauan G-force, analisis kecepatan vertikal, dan umpan balik penumpang. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:th      การวิเคราะห์การบินที่แม่นยำสำหรับ GeoFS พร้อมการตรวจสอบ G-force การวิเคราะห์ความเร็วในแนวดิ่ง และความคิดเห็นของผู้โดยสาร © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:pl      Precyzyjna analiza lotu dla GeoFS z monitorowaniem siły G, analizą prędkości pionowej i informacjami zwrotnymi od pasażerów. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:nl      Precisievluchtanalyse voor GeoFS met G-krachtmonitoring, verticale snelheidsanalyse en passagiersfeedback. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:it      Analisi di volo di precisione per GeoFS con monitoraggio della forza G, analisi della velocità verticale e feedback dei passeggeri. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:sv      Precisionsflyganalys för GeoFS med G-kraftövervakning, vertikal hastighetsanalys och passagerarfeedback. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:da      Præcisionsflyvningsanalyse til GeoFS med G-kraftovervågning, vertikal hastighedsanalyse og passagerfeedback. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:fi      Tarkkaa lentoanalytiikkaa GeoFS:lle G-force-valvonnalla, pystynopeusanalyysillä ja matkustajien palautteella. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:nb      Presisjonsflyvningsanalyse for GeoFS med G-kraftovervåking, vertikal hastighetsanalyse og passasjertilbakemelding. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:cs      Přesná letová analytika pro GeoFS s monitorováním G-force, analýzou vertikální rychlosti a zpětnou vazbou cestujících. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:hu      Precíziós repüléselemzés a GeoFS-hez G-force felügyelettel, függőleges sebesség elemzéssel és utasok visszajelzésével. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:ro      Analiză de zbor de precizie pentru GeoFS cu monitorizare G-force, analiză verticală a vitezei și feedback al pasagerilor. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:uk      Точна аналітика польоту для GeoFS із моніторингом G-force, аналізом вертикальної швидкості та відгуками пасажирів. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:hi      जी-फोर्स मॉनिटरिंग, ऊर्ध्वाधर गति विश्लेषण और यात्री प्रतिक्रिया के साथ जियोएफएस के लिए सटीक उड़ान विश्लेषण। © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:bn      জি-ফোর্স মনিটরিং, উল্লম্ব গতি বিশ্লেষণ, এবং যাত্রীদের প্রতিক্রিয়া সহ GeoFS-এর জন্য যথার্থ ফ্লাইট বিশ্লেষণ। © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:fa      تجزیه و تحلیل دقیق پرواز برای GeoFS با نظارت نیروی G، تجزیه و تحلیل سرعت عمودی، و بازخورد مسافران. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:he      ניתוח טיסה מדויק עבור GeoFS עם ניטור כוח G, ניתוח מהירות אנכית ומשוב נוסעים. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:ms      Analitis penerbangan ketepatan untuk GeoFS dengan pemantauan G-force, analisis kelajuan menegak dan maklum balas penumpang. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:fil     Precision flight analytics para sa GeoFS na may G-force monitoring, vertical speed analysis, at feedback ng pasahero. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:el      Αναλυτικά στοιχεία πτήσης ακριβείας για GeoFS με παρακολούθηση G-force, ανάλυση κάθετης ταχύτητας και ανατροφοδότηση επιβατών. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:hr      Precizna analitika leta za GeoFS s praćenjem G-sile, analizom vertikalne brzine i povratnim informacijama putnika. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:sk      Presná letová analýza pre GeoFS s monitorovaním sily G, analýzou vertikálnej rýchlosti a spätnou väzbou cestujúcich. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:bg      Прецизен анализ на полета за GeoFS с мониторинг на G-силата, анализ на вертикалната скорост и обратна връзка от пътниците. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:sr      Прецизна аналитика лета за ГеоФС са праћењем Г-форце, анализом вертикалне брзине и повратним информацијама путника. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:lt      Tiksli „GeoFS“ skrydžių analizė su „G-force“ stebėjimu, vertikalaus greičio analize ir keleivių atsiliepimais. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:lv      Precīza lidojumu analīze GeoFS ar G spēka uzraudzību, vertikālā ātruma analīzi un pasažieru atsauksmēm. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:et      GeoFS-i täpne lennuanalüüs koos G-jõu jälgimise, vertikaalkiiruse analüüsi ja reisijate tagasisidega. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:sl      Natančna analitika letenja za GeoFS z nadzorom G-sile, analizo navpične hitrosti in povratnimi informacijami potnikov. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:ca      Anàlisis de vol de precisió per a GeoFS amb monitorització de la força G, anàlisi de velocitat vertical i comentaris dels passatgers. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:af      Presisievluganalise vir GeoFS met G-kragmonitering, vertikale spoedanalise en passasierterugvoer. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:sw      Uchanganuzi wa usahihi wa safari za ndege za GeoFS kwa ufuatiliaji wa nguvu ya G, uchanganuzi wa kasi wima na maoni ya abiria. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:zu      Izibalo zendiza eziqondile ze-GeoFS ezinokuqapha kwe-G-force, ukuhlaziya isivinini esiqondile, kanye nempendulo yomgibeli. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:mn      G-хүчний хяналт, босоо хурдны шинжилгээ, зорчигчдын санал хүсэлт бүхий GeoFS-ийн нислэгийн нарийн шинжилгээ. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:my      G-force စောင့်ကြည့်ခြင်း၊ ဒေါင်လိုက်အမြန်နှုန်းခွဲခြမ်းစိတ်ဖြာခြင်းနှင့် ခရီးသည်တုံ့ပြန်ချက်တို့ပါရှိသော GeoFS အတွက် တိကျသောပျံသန်းမှုပိုင်းခြားစိတ်ဖြာချက်။ © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:km      ការវិភាគជើងហោះហើរភាពជាក់លាក់សម្រាប់ GeoFS ជាមួយនឹងការត្រួតពិនិត្យកម្លាំង G ការវិភាគល្បឿនបញ្ឈរ និងមតិរបស់អ្នកដំណើរ។ © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:lo      ການວິເຄາະການບິນທີ່ຊັດເຈນສໍາລັບ GeoFS ດ້ວຍການຕິດຕາມຜົນບັງຄັບໃຊ້ G, ການວິເຄາະຄວາມໄວໃນແນວຕັ້ງ, ແລະຄໍາຄຶດຄໍາເຫັນຂອງຜູ້ໂດຍສານ. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:ur      جی فورس مانیٹرنگ، عمودی رفتار کے تجزیہ، اور مسافروں کے تاثرات کے ساتھ جیو ایف ایس کے لیے درست پرواز کے تجزیات۔ © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
+// @description         Precision flight analytics for GeoFS with G-force monitoring, vertical speed analysis, and passenger feedback. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:vi      Phân tích chuyến bay chính xác cho GeoFS với tính năng giám sát lực G, phân tích tốc độ thẳng đứng và phản hồi của hành khách. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:zh-CN   通过重力监测、垂直速度分析和乘客反馈对 GeoFS 进行精确飞行分析。 © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:zh-TW   透過重力監測、垂直速度分析和乘客回饋對 GeoFS 進行精確飛行分析。 © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:ja      G フォース モニタリング、垂直速度分析、乗客のフィードバックを備えた GeoFS の精密な飛行分析。 © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:ko      G-force 모니터링, 수직 속도 분석 및 승객 피드백을 갖춘 GeoFS용 정밀 비행 분석입니다. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:fr      Analyses de vol de précision pour GeoFS avec surveillance de la force G, analyse de la vitesse verticale et commentaires des passagers. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:de      Präzise Fluganalysen für GeoFS mit G-Force-Überwachung, vertikaler Geschwindigkeitsanalyse und Passagier-Feedback. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:es      Análisis de vuelo de precisión para GeoFS con monitoreo de fuerza G, análisis de velocidad vertical y comentarios de los pasajeros. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:pt-BR   Análise precisa de voo para GeoFS com monitoramento de força G, análise de velocidade vertical e feedback dos passageiros. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:pt-PT   Análise precisa de voo para GeoFS com monitorização de força G, análise de velocidade vertical e feedback dos passageiros. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:ru      Точная аналитика полета для GeoFS с мониторингом перегрузки, анализом вертикальной скорости и отзывами пассажиров. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:ar      تحليلات دقيقة للطيران لنظام GeoFS مع مراقبة قوة الجاذبية وتحليل السرعة العمودية وتعليقات الركاب. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:tr      G kuvveti izleme, dikey hız analizi ve yolcu geri bildirimi ile GeoFS için hassas uçuş analitiği. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:id      Analisis penerbangan presisi untuk GeoFS dengan pemantauan G-force, analisis kecepatan vertikal, dan umpan balik penumpang. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:th      การวิเคราะห์การบินที่แม่นยำสำหรับ GeoFS พร้อมการตรวจสอบ G-force การวิเคราะห์ความเร็วในแนวดิ่ง และความคิดเห็นของผู้โดยสาร © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:pl      Precyzyjna analiza lotu dla GeoFS z monitorowaniem siły G, analizą prędkości pionowej i informacjami zwrotnymi od pasażerów. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:nl      Precisievluchtanalyse voor GeoFS met G-krachtmonitoring, verticale snelheidsanalyse en passagiersfeedback. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:it      Analisi di volo di precisione per GeoFS con monitoraggio della forza G, analisi della velocità verticale e feedback dei passeggeri. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:sv      Precisionsflyganalys för GeoFS med G-kraftövervakning, vertikal hastighetsanalys och passagerarfeedback. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:da      Præcisionsflyvningsanalyse til GeoFS med G-kraftovervågning, vertikal hastighedsanalyse og passagerfeedback. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:fi      Tarkkaa lentoanalytiikkaa GeoFS:lle G-force-valvonnalla, pystynopeusanalyysillä ja matkustajien palautteella. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:nb      Presisjonsflyvningsanalyse for GeoFS med G-kraftovervåking, vertikal hastighetsanalyse og passasjertilbakemelding. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:cs      Přesná letová analytika pro GeoFS s monitorováním G-force, analýzou vertikální rychlosti a zpětnou vazbou cestujících. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:hu      Precíziós repüléselemzés a GeoFS-hez G-force felügyelettel, függőleges sebesség elemzéssel és utasok visszajelzésével. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:ro      Analiză de zbor de precizie pentru GeoFS cu monitorizare G-force, analiză verticală a vitezei și feedback al pasagerilor. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:uk      Точна аналітика польоту для GeoFS із моніторингом G-force, аналізом вертикальної швидкості та відгуками пасажирів. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:hi      जी-फोर्स मॉनिटरिंग, ऊर्ध्वाधर गति विश्लेषण और यात्री प्रतिक्रिया के साथ जियोएफएस के लिए सटीक उड़ान विश्लेषण। © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:bn      জি-ফোর্স মনিটরিং, উল্লম্ব গতি বিশ্লেষণ, এবং যাত্রীদের প্রতিক্রিয়া সহ GeoFS-এর জন্য যথার্থ ফ্লাইট বিশ্লেষণ। © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:fa      تجزیه و تحلیل دقیق پرواز برای GeoFS با نظارت نیروی G، تجزیه و تحلیل سرعت عمودی، و بازخورد مسافران. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:he      ניתוח טיסה מדויק עבור GeoFS עם ניטור כוח G, ניתוח מהירות אנכית ומשוב נוסעים. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:ms      Analitis penerbangan ketepatan untuk GeoFS dengan pemantauan G-force, analisis kelajuan menegak dan maklum balas penumpang. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:fil     Precision flight analytics para sa GeoFS na may G-force monitoring, vertical speed analysis, at feedback ng pasahero. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:el      Αναλυτικά στοιχεία πτήσης ακριβείας για GeoFS με παρακολούθηση G-force, ανάλυση κάθετης ταχύτητας και ανατροφοδότηση επιβατών. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:hr      Precizna analitika leta za GeoFS s praćenjem G-sile, analizom vertikalne brzine i povratnim informacijama putnika. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:sk      Presná letová analýza pre GeoFS s monitorovaním sily G, analýzou vertikálnej rýchlosti a spätnou väzbou cestujúcich. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:bg      Прецизен анализ на полета за GeoFS с мониторинг на G-силата, анализ на вертикалната скорост и обратна връзка от пътниците. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:sr      Прецизна аналитика лета за ГеоФС са праћењем Г-форце, анализом вертикалне брзине и повратним информацијама путника. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:lt      Tiksli „GeoFS“ skrydžių analizė su „G-force“ stebėjimu, vertikalaus greičio analize ir keleivių atsiliepimais. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:lv      Precīza lidojumu analīze GeoFS ar G spēka uzraudzību, vertikālā ātruma analīzi un pasažieru atsauksmēm. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:et      GeoFS-i täpne lennuanalüüs koos G-jõu jälgimise, vertikaalkiiruse analüüsi ja reisijate tagasisidega. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:sl      Natančna analitika letenja za GeoFS z nadzorom G-sile, analizo navpične hitrosti in povratnimi informacijami potnikov. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:ca      Anàlisis de vol de precisió per a GeoFS amb monitorització de la força G, anàlisi de velocitat vertical i comentaris dels passatgers. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:af      Presisievluganalise vir GeoFS met G-kragmonitering, vertikale spoedanalise en passasierterugvoer. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:sw      Uchanganuzi wa usahihi wa safari za ndege za GeoFS kwa ufuatiliaji wa nguvu ya G, uchanganuzi wa kasi wima na maoni ya abiria. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:zu      Izibalo zendiza eziqondile ze-GeoFS ezinokuqapha kwe-G-force, ukuhlaziya isivinini esiqondile, kanye nempendulo yomgibeli. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:mn      G-хүчний хяналт, босоо хурдны шинжилгээ, зорчигчдын санал хүсэлт бүхий GeoFS-ийн нислэгийн нарийн шинжилгээ. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:my      G-force စောင့်ကြည့်ခြင်း၊ ဒေါင်လိုက်အမြန်နှုန်းခွဲခြမ်းစိတ်ဖြာခြင်းနှင့် ခရီးသည်တုံ့ပြန်ချက်တို့ပါရှိသော GeoFS အတွက် တိကျသောပျံသန်းမှုပိုင်းခြားစိတ်ဖြာချက်။ © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:km      ការវិភាគជើងហោះហើរភាពជាក់លាក់សម្រាប់ GeoFS ជាមួយនឹងការត្រួតពិនិត្យកម្លាំង G ការវិភាគល្បឿនបញ្ឈរ និងមតិរបស់អ្នកដំណើរ។ © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:lo      ການວິເຄາະການບິນທີ່ຊັດເຈນສໍາລັບ GeoFS ດ້ວຍການຕິດຕາມຜົນບັງຄັບໃຊ້ G, ການວິເຄາະຄວາມໄວໃນແນວຕັ້ງ, ແລະຄໍາຄຶດຄໍາເຫັນຂອງຜູ້ໂດຍສານ. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:ur      جی فورس مانیٹرنگ، عمودی رفتار کے تجزیہ، اور مسافروں کے تاثرات کے ساتھ جیو ایف ایس کے لیے درست پرواز کے تجزیات۔ © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
 
 // @require             https://update.greasyfork.org/scripts/581510/code.js
 // @require             https://update.greasyfork.org/scripts/581511/code.js
@@ -114,11 +114,11 @@
 // @compatible          safari
 // @compatible          brave
 // @compatible          opera
-// @copyright           2026, _init (https://greasyfork.org/users/1594049)
+// @copyright           2026, AMFI-Disable (https://greasyfork.org/users/1594049)
 
 // @namespace           https://greasyfork.org/users/1594049
 // @version             2.0.1
-// @author              _init
+// @author              AMFI-Disable
 // @icon                https://geofs-assets.evengao6688.workers.dev/icons/landing-statistics.png
 // @match               https://www.geo-fs.com/geofs.php*
 // @match               https://*.geo-fs.com/geofs.php*
@@ -181,7 +181,7 @@
                 localStorage.setItem("myScriptUserId", userId);
             }
             try {
-                await fetch("https://track.tylerbialowas-bard.workers.dev", {
+                await fetch("https://geofs-assets.evengao6688.workers.dev/track", {
                     method: "POST",
                     headers: { "Content-Type": "application/json" },
                     body: JSON.stringify({ script: SCRIPT_NAME, userId: userId }),
