@@ -6,6 +6,18 @@
 
 The professional landing performance and analytics framework for **GeoFS-V3.9**. This module provides precision monitoring of every touchdown, calculating vertical speed, G-load, and spatial accuracy with high-fidelity feedback.
 
+---
+
+## ⚖️ Educational & Fair-Play Disclaimer
+
+> [!CAUTION]
+> **IMPORTANT NOTICE & DISCLAIMER**:
+> This codebase is provided strictly for educational, research, and testing purposes in authorized environments.
+> Using automated assistance or unauthorized scripts in violation of platform terms of service or anti-cheat policies may lead to account penalties.
+> The developers and contributors accept no responsibility or liability for misuse of this software.
+
+---
+
 ## ✨ Features
 
 - **📊 High-Precision Monitoring**: 50Hz physics loop captures the exact moment of touchdown for pinpoint accuracy.
