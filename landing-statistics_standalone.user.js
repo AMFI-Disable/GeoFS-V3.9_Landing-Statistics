@@ -127,7 +127,23 @@
 // ==/UserScript==
 
 (() => {
-    
+    /**
+     * Runtime Version Guard: GeoFS-V3.9 Suite Compatibility
+     * Ensures this module only executes on GeoFS v3.9 or earlier, and gracefully
+     * deactivates if GeoFS v4.0+ is detected.
+     */
+    function isUnsupportedGeoFS() {
+        const raw = window.geofs?.version;
+        if (raw === undefined || raw === null) return false;
+        const clean = typeof raw === 'string' ? raw.replace(/^[^\d.]*/, '') : raw;
+        const num = typeof clean === 'number' ? clean : parseFloat(clean);
+        return !isNaN(num) && num >= 4.0;
+    }
+
+    if (isUnsupportedGeoFS()) {
+        console.warn("[GeoFS-V3.9_Landing-Statistics] Inactive: GeoFS v" + window.geofs?.version + " detected (suite only supports GeoFS v3.9 and earlier).");
+        return;
+    }
 
     window.MS_TO_KNOTS = window.MS_TO_KNOTS || 1.94384449;
     window.DEGREES_TO_RAD = window.DEGREES_TO_RAD || 0.017453292519943295769236907684886127134428718885417254560971914401710091146034494436822415696345094822123044925073790592483854692275281012398474218934047117319168245015010769561697553581238605305168789;
@@ -193,6 +209,10 @@
 
     // Technical Module Initialization Entrypoint (called by SafeInit)
     window.initLandingStats = () => {
+        if (isUnsupportedGeoFS()) {
+            console.warn("[GeoFS-V3.9_Landing-Statistics] Inactive: GeoFS v" + window.geofs?.version + " detected (suite only supports GeoFS v3.9 and earlier).");
+            return;
+        }
         if (window.isStatsLoaded) return;
         window.isStatsLoaded = true;
 
