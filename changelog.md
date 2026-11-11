@@ -4,6 +4,33 @@ All notable changes, touchdown telemetry algorithms, and version releases for Ge
 
 ---
 
+## [3.9.0] - Unified Metadata
+
+### Changed
+
+- Standardize the userscript metadata and version across the V3.9 ecosystem.
+- Match only the GeoFS main site and activate only when it reports V3.9.
+
+---
+
+## [Unreleased]
+
+### Changed
+
+- **Theme Alignment**: Updated touchdown telemetry dialog, rating highlights, and borders to neutral `#dddddd` and green `#4caf50`.
+- **Favicon Metadata**: Switched userscript icon reference to the official GeoFS favicon.
+
+---
+
+## [2.0.5] - GeoFS V3.9 Compatibility
+
+### Changed
+
+- Start only after GeoFS reports V3.9; remain inactive on other or unrecognized versions.
+- Update compatibility documentation and version metadata.
+
+---
+
 ## [2.0.1] - Telemetry Rate Enhancement And Runway Scoring
 
 ### Added

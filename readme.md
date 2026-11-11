@@ -1,37 +1,24 @@
-# **GeoFS-V3.9**_Landing-Statistics
+# GeoFS-V3.9_Landing-Statistics
 
-![Version](https://img.shields.io/badge/Version-V2.0.1-3b82f6?style=flat-square&logo=git&logoColor=white)
-![Ecosystem](https://img.shields.io/badge/GeoFS--V3.9-Landing_Statistics-0ea5e9?style=flat-square&logo=grafana&logoColor=white)
-![Status](https://img.shields.io/badge/Status-Stable-10b981?style=flat-square&logo=lighthouse&logoColor=white)
+![Version](https://img.shields.io/badge/Version-v3.9.0-3b82f6?style=flat-square)
 
-The professional landing performance and analytics framework for **GeoFS-V3.9**. This module provides precision monitoring of every touchdown, calculating vertical speed, G-load, and spatial accuracy with high-fidelity feedback.
+Shows touchdown measurements and a landing report.
 
----
+## Features
 
-## ⚖️ Educational & Fair-Play Disclaimer
+- Displays vertical speed, G-force, airspeed, attitude, bounce count, and an overall landing score.
+- Touchdown-zone checks use GeoFS runway information when available.
 
-> [!CAUTION]
-> **IMPORTANT NOTICE & DISCLAIMER**:
-> This codebase is provided strictly for educational, research, and testing purposes in authorized environments.
-> Using automated assistance or unauthorized scripts in violation of platform terms of service or anti-cheat policies may lead to account penalties.
-> The developers and contributors accept no responsibility or liability for misuse of this software.
+## Installation
 
----
+1. Install a userscript manager such as [Tampermonkey](https://www.tampermonkey.net/).
+2. Install or update the script from [Greasy Fork](https://greasyfork.org/en/scripts/581684-geofs-v3-9-landing-statistics).
+3. Open or reload GeoFS V3.9. The script starts automatically.
 
-## ✨ Features
+The script activates only when GeoFS reports version V3.9 (including V3.9 patch releases). It waits for the version to become available and remains inactive on other versions. Most standalone scripts load the Core Library and Design System as dependencies; the userscript manager handles those dependencies.
 
-- **📊 High-Precision Monitoring**: 50Hz physics loop captures the exact moment of touchdown for pinpoint accuracy.
-- **📈 Comprehensive Scoring**: A dynamic 0-10 score based on FPM, G-force, bank angle, bounces, and runway alignment.
-- **🗺️ OSM Runway Detection**: Automatically identifies nearby runways using the Overpass API to verify touchdown zone (TDZ) accuracy.
-- **🎭 Intelligent Feedback**: Randomized passenger and flight-quality reports providing immersive post-landing reviews.
-- **🚀 CDN Loader Architecture**: Automatically injects statistics display alongside the HUD.
+The **GeoFS-V3.9_Ecosystem** panel shows startup status and notifications. Select × to dismiss it, or wait for it to disappear. A script listed as not detected is not necessarily uninstalled.
 
-## 🛠️ Installation
+## License
 
-### Standalone (Tampermonkey)
-
-1. Install the [Tampermonkey](https://www.tampermonkey.net/) extension.
-2. Install the script via [**Greasy Fork**](https://greasyfork.org/en/scripts/581684-geofs-v3-9-landing-statistics).
-3. Refresh GeoFS and the module will automatically initialize alongside the HUD.
-
-*© 2026 AMFI-Disable. Part of the [**GeoFS-V3.9**_Ecosystem](https://sites.google.com/view/geofs-v39-ecosystem/home).*
+[MIT](license) · © 2026 AMFI-Disable · [GeoFS-V3.9 Ecosystem](https://sites.google.com/view/geofs-v39-ecosystem/home)
