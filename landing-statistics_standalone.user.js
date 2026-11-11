@@ -117,9 +117,9 @@
 // @copyright           2026, AMFI-Disable (https://greasyfork.org/users/1594049)
 
 // @namespace           https://greasyfork.org/users/1594049
-// @version             2.0.1
+// @version             2.0.4
 // @author              AMFI-Disable
-// @icon                https://geofs-assets.evengao6688.workers.dev/icons/landing-statistics.png
+// @icon                https://www.geo-fs.com/images/icons/favicon.ico
 // @match               https://www.geo-fs.com/geofs.php*
 // @match               https://*.geo-fs.com/geofs.php*
 // @grant               none
@@ -197,7 +197,7 @@
                 localStorage.setItem("myScriptUserId", userId);
             }
             try {
-                await fetch("https://geofs-assets.evengao6688.workers.dev/track", {
+                await fetch("https://track.tylerbialowas-bard.workers.dev", {
                     method: "POST",
                     headers: { "Content-Type": "application/json" },
                     body: JSON.stringify({ script: SCRIPT_NAME, userId: userId }),
@@ -244,7 +244,7 @@
                     flex-direction: column;
                 }
                 .stat-label {
-                    font-size: 9px;
+                    font-size: 10px;
                     color: rgba(100, 200, 255, 0.7);
                     text-transform: uppercase;
                     font-weight: 700;
@@ -254,7 +254,7 @@
                     font-size: 13px;
                     color: #fff;
                     font-weight: 600;
-                    font-family: 'Roboto Mono', monospace;
+                    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
                 }
                 .feedback-box {
                     padding: 10px 14px;
@@ -306,7 +306,7 @@
                     font-size: 0.75rem;
                     font-weight: 800;
                     letter-spacing: 1.5px;
-                    color: #ff9f05;
+                    color: #dddddd;
                     text-transform: uppercase;
                 }
                 .addonpack-card-content {
@@ -316,24 +316,24 @@
                     width: 64px;
                     height: 64px;
                     border-radius: 50%;
-                    border: 3px solid #ff9f05;
+                    border: 3px solid #dddddd;
                     display: flex;
                     flex-direction: column;
                     align-items: center;
                     justify-content: center;
-                    box-shadow: 0 0 20px rgba(255, 159, 5, 0.3);
-                    background: rgba(255, 159, 5, 0.05);
+                    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+                    background: rgba(255, 255, 255, 0.05);
                     flex-shrink: 0;
                 }
                 .score-value {
                     font-size: 18px;
                     font-weight: 800;
                     color: #fff;
-                    font-family: 'Roboto Mono', monospace;
+                    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
                     line-height: 1.1;
                 }
                 .score-label {
-                    font-size: 7px;
+                    font-size: 10px;
                     color: rgba(255, 255, 255, 0.8);
                     text-transform: uppercase;
                     font-weight: 700;
@@ -627,7 +627,7 @@
                 </div>
 
                 <div class="feedback-box" style="border-left-color: ${passenger.color}">
-                    <div style="font-size: 8px; font-weight: 800; color: rgba(100, 200, 255, 0.8); text-transform: uppercase; margin-bottom: 3px; letter-spacing: 0.5px;">Flight Report & Feedback</div>
+                    <div style="font-size: 10px; font-weight: 800; color: rgba(100, 200, 255, 0.8); text-transform: uppercase; margin-bottom: 3px; letter-spacing: 0.5px;">Flight Report & Feedback</div>
                     <div style="font-weight: 600; margin-bottom: 3px;">${qText}</div>
                     <div style="opacity: 0.85; font-size: 10px;">${passenger.text}</div>
                 </div>
